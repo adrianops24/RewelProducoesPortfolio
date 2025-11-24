@@ -11,20 +11,23 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "Início" },
-    { href: "/sobre", label: "Sobre" },
-    { href: "/projetos", label: "Projetos" },
-    { href: "/clientes", label: "Clientes" },
+    { href: "/about", label: "Sobre" },
+    { href: "/project", label: "Projetos" },
+    { href: "/clients", label: "Clientes" },
   ];
 
   return (
     <header className="relative w-full bg-gradient-to-r bg-[#0F1117] text-white shadow-md rounded-b-xl">
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
         {/* LOGO */}
+
+        <Link href="/" >
         <div className="flex items-center gap-3">
           
           <Image src="/assets/logoRW.svg" alt="LogoRw" width={30} height={40} className="rounded-full" />
         
         </div>
+        </Link>
 
         {/* NAVEGAÇÃO DESKTOP */}
         <nav className="hidden md:flex gap-8">
