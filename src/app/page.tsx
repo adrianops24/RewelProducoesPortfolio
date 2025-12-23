@@ -1,6 +1,6 @@
 import Header from "~/components/header";
 import Image from "next/image";
-
+import ProjectsPage from "./project/page";
 
 export default function HomePage() {
   return (
@@ -32,8 +32,11 @@ export default function HomePage() {
             digitais
           </h2>
         </div>
-      </section>
 
+
+      </section>
+      
+      <ProjectsPage />
       {/* CONTEÚDO ABAIXO – sem o rapaz no fundo */}
      
     </main>
